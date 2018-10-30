@@ -59,6 +59,6 @@ class __TwigTemplate_9e170f352a0e7925645b528106a3acffd31bdbb2ae396f2829d5deb18f3
 {{ status_code }} {{ status_text }}
 
 */
-", "@Twig/Exception/error.css.twig", "/root/mariadbapi/vendor/symfony/twig-bundle/Resources/views/Exception/error.css.twig");
+", "@Twig/Exception/error.css.twig", "/tmp/gitdeploy/Symfony4/vendor/symfony/twig-bundle/Resources/views/Exception/error.css.twig");
     }
 }

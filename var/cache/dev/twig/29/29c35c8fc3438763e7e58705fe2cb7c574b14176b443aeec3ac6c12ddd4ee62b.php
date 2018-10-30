@@ -125,6 +125,6 @@ class __TwigTemplate_1b830b8b8e9ec34110e0c5bcdd0dbf2bb308a0b7b90029b6d3a8d83cbc6
         {% block javascripts %}{% endblock %}
     </body>
 </html>
-", "base.html.twig", "/root/mariadbapi/templates/base.html.twig");
+", "base.html.twig", "/tmp/gitdeploy/Symfony4/templates/base.html.twig");
     }
 }

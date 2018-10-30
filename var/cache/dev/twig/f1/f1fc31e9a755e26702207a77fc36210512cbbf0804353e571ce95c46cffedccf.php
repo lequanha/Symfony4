@@ -122,6 +122,6 @@ class __TwigTemplate_e42eededcd7d6404e61401b881e9f55c30e27ee0b2fea335c4160ed79d9
     </ul>
 </div>
 {% endblock %}
-", "category/index.html.twig", "/root/mariadbapi/templates/category/index.html.twig");
+", "category/index.html.twig", "/tmp/gitdeploy/Symfony4/templates/category/index.html.twig");
     }
 }

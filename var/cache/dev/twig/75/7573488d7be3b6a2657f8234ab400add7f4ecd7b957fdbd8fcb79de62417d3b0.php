@@ -43,6 +43,6 @@ class __TwigTemplate_d054231b2f7d099df8d804b20ba5f4357fe000b7f79047cea8b3260e084
     public function getSourceContext()
     {
         return new Twig_Source("<?php echo \$view['form']->block(\$form, 'form_widget_simple', array('type' => isset(\$type) ? \$type : 'email')) ?>
-", "@Framework/Form/email_widget.html.php", "/root/mariadbapi/vendor/symfony/framework-bundle/Resources/views/Form/email_widget.html.php");
+", "@Framework/Form/email_widget.html.php", "/tmp/gitdeploy/Symfony4/vendor/symfony/framework-bundle/Resources/views/Form/email_widget.html.php");
     }
 }

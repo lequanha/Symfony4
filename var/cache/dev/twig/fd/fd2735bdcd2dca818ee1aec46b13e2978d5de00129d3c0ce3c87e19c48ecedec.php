@@ -51,6 +51,6 @@ class __TwigTemplate_e4ef3fcf0b911d673113dbbe2ef237c18a645a3b461590a4028cf741f0c
 <?php else: ?>
 <?php echo \$view['form']->block(\$form, 'choice_widget_collapsed') ?>
 <?php endif ?>
-", "@Framework/Form/choice_widget.html.php", "/root/mariadbapi/vendor/symfony/framework-bundle/Resources/views/Form/choice_widget.html.php");
+", "@Framework/Form/choice_widget.html.php", "/tmp/gitdeploy/Symfony4/vendor/symfony/framework-bundle/Resources/views/Form/choice_widget.html.php");
     }
 }

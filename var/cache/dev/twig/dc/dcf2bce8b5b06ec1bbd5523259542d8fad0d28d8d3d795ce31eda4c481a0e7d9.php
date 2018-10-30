@@ -55,6 +55,6 @@ class __TwigTemplate_10d6e7d3bef983ab3b76e01141f75c97abfca2085a7ac67aa617392f917
         return new Twig_Source("/*
 {{ include('@Twig/Exception/exception.txt.twig', { exception: exception }) }}
 */
-", "@Twig/Exception/exception.css.twig", "/root/mariadbapi/vendor/symfony/twig-bundle/Resources/views/Exception/exception.css.twig");
+", "@Twig/Exception/exception.css.twig", "/tmp/gitdeploy/Symfony4/vendor/symfony/twig-bundle/Resources/views/Exception/exception.css.twig");
     }
 }

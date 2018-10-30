@@ -77,6 +77,6 @@ class __TwigTemplate_df7183dedf7d4fe64b911c08311e73c3dbc868a984a750e7f4812bfc993
     <?php endif ?>
     <?php echo \$view['form']->block(\$form, 'choice_widget_options', array('choices' => \$choices)) ?>
 </select>
-", "@Framework/Form/choice_widget_collapsed.html.php", "/root/mariadbapi/vendor/symfony/framework-bundle/Resources/views/Form/choice_widget_collapsed.html.php");
+", "@Framework/Form/choice_widget_collapsed.html.php", "/tmp/gitdeploy/Symfony4/vendor/symfony/framework-bundle/Resources/views/Form/choice_widget_collapsed.html.php");
     }
 }

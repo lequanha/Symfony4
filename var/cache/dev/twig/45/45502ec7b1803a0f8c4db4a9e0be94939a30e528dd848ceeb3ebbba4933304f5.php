@@ -75,6 +75,6 @@ class __TwigTemplate_d4aac883412564e03739874a9a276acae02de5ecc5f8cd6bd94567c74fb
             </trace>
 {% endfor %}
         </traces>
-", "@Twig/Exception/traces.xml.twig", "/root/mariadbapi/vendor/symfony/twig-bundle/Resources/views/Exception/traces.xml.twig");
+", "@Twig/Exception/traces.xml.twig", "/tmp/gitdeploy/Symfony4/vendor/symfony/twig-bundle/Resources/views/Exception/traces.xml.twig");
     }
 }

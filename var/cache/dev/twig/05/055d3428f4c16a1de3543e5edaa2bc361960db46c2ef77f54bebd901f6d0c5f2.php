@@ -168,6 +168,6 @@ class __TwigTemplate_f0109f46fcf2b9288a189e49b75aec15cc46dde1b3abdfe3493f36e0a3e
     {% endfor %}
     </tbody>
 </table>
-", "@Twig/Exception/logs.html.twig", "/root/mariadbapi/vendor/symfony/twig-bundle/Resources/views/Exception/logs.html.twig");
+", "@Twig/Exception/logs.html.twig", "/tmp/gitdeploy/Symfony4/vendor/symfony/twig-bundle/Resources/views/Exception/logs.html.twig");
     }
 }

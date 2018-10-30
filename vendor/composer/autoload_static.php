@@ -9,6 +9,7 @@ class ComposerStaticInit2d93d1477a57e3ec19baf13243000b6e
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '6a47392539ca2329373e0d33e1dba053' => __DIR__ . '/..' . '/symfony/polyfill-intl-icu/bootstrap.php',
+        '337663d83d8353cc8c7847676b3b0937' => __DIR__ . '/..' . '/kahlan/kahlan/src/functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -87,6 +88,10 @@ class ComposerStaticInit2d93d1477a57e3ec19baf13243000b6e
         'M' => 
         array (
             'Monolog\\' => 8,
+        ),
+        'K' => 
+        array (
+            'Kahlan\\' => 7,
         ),
         'D' => 
         array (
@@ -320,6 +325,10 @@ class ComposerStaticInit2d93d1477a57e3ec19baf13243000b6e
         'Monolog\\' => 
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
+        ),
+        'Kahlan\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kahlan/kahlan/src',
         ),
         'Doctrine\\ORM\\' => 
         array (

@@ -67,6 +67,6 @@ class __TwigTemplate_3946b680d42dfd6a61226f695d21bce0834ec6cee5071c8ff18d29cf12e
         <option value=\"<?php echo \$view->escape(\$choice->value) ?>\" <?php echo \$formHelper->block(\$form, 'choice_attributes', array('choice_attr' => \$choice->attr)) ?><?php if (\$is_selected(\$choice->value, \$value)): ?> selected=\"selected\"<?php endif?>><?php echo \$view->escape(false !== \$choice_translation_domain ? \$translatorHelper->trans(\$choice->label, array(), \$choice_translation_domain) : \$choice->label) ?></option>
     <?php endif ?>
 <?php endforeach ?>
-", "@Framework/Form/choice_widget_options.html.php", "/root/mariadbapi/vendor/symfony/framework-bundle/Resources/views/Form/choice_widget_options.html.php");
+", "@Framework/Form/choice_widget_options.html.php", "/tmp/gitdeploy/Symfony4/vendor/symfony/framework-bundle/Resources/views/Form/choice_widget_options.html.php");
     }
 }

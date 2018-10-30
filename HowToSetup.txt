@@ -118,6 +118,32 @@ Specifications : 0 Pending, 0 Excluded, 0 Skipped
 Passed 0 of 0 PASS in 0.005 seconds (using 2MB)
 
 
+[root@ip-172-31-95-82 Symfony4]# vi kahlan-config.php
+------------------------------------------------------------
+<?php // kahlan-config.php
+
+use App\Kernel;
+use Kahlan\Filter\Filters;
+use Symfony\Component\HttpFoundation\Request;
+
+Filters::apply($this, 'bootstrap', function($next) {
+
+    require __DIR__ . '/vendor/autoload.php';
+
+    $root = $this->suite()->root();
+    $root->beforeAll(function () {
+       $this->request = Request::createFromGlobals();
+       $this->kernel  = new Kernel('test', false);
+    });
+
+    return $next();
+
+});
+
+?>
+------------------------------------------------------------
+
+
 D) Install MariaDB
 
 yum update

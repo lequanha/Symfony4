@@ -59,6 +59,6 @@ class __TwigTemplate_869637db43cb18e503bdbefed6592e1c1e4f90af60d76299c07dc301b79
         return new Twig_Source("<?xml version=\"1.0\" encoding=\"{{ _charset }}\" ?>
 
 <error code=\"{{ status_code }}\" message=\"{{ status_text }}\" />
-", "@Twig/Exception/error.xml.twig", "/root/mariadbapi/vendor/symfony/twig-bundle/Resources/views/Exception/error.xml.twig");
+", "@Twig/Exception/error.xml.twig", "/tmp/gitdeploy/Symfony4/vendor/symfony/twig-bundle/Resources/views/Exception/error.xml.twig");
     }
 }

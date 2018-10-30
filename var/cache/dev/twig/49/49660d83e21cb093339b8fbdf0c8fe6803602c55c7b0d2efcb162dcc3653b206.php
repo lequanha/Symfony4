@@ -82,6 +82,6 @@ class __TwigTemplate_f1c45b54ee705fe348c0331f2b24406a03f84ad6bfdfa667211f211bbbe
 {{ include('@Twig/Exception/traces.txt.twig', { exception: e }, with_context = false) }}
 
 {% endfor %}
-", "@Twig/Exception/exception.txt.twig", "/root/mariadbapi/vendor/symfony/twig-bundle/Resources/views/Exception/exception.txt.twig");
+", "@Twig/Exception/exception.txt.twig", "/tmp/gitdeploy/Symfony4/vendor/symfony/twig-bundle/Resources/views/Exception/exception.txt.twig");
     }
 }

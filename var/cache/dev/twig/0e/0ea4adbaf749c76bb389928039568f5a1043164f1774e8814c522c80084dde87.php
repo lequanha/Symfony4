@@ -152,6 +152,6 @@ class __TwigTemplate_eac739713651ad637bf7afb5d5561a78b79991eacbb38d5a1d36694540b
         </tr>
     </tbody>
 </table>
-", "@Twig/Exception/traces_text.html.twig", "/root/mariadbapi/vendor/symfony/twig-bundle/Resources/views/Exception/traces_text.html.twig");
+", "@Twig/Exception/traces_text.html.twig", "/tmp/gitdeploy/Symfony4/vendor/symfony/twig-bundle/Resources/views/Exception/traces_text.html.twig");
     }
 }

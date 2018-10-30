@@ -88,6 +88,6 @@ class __TwigTemplate_c2563cff6d6f19930b0a20a53b81ae4c35a80999cd0b6182da81ff67aab
     </exception>
 {% endfor %}
 </error>
-", "@Twig/Exception/exception.xml.twig", "/root/mariadbapi/vendor/symfony/twig-bundle/Resources/views/Exception/exception.xml.twig");
+", "@Twig/Exception/exception.xml.twig", "/tmp/gitdeploy/Symfony4/vendor/symfony/twig-bundle/Resources/views/Exception/exception.xml.twig");
     }
 }

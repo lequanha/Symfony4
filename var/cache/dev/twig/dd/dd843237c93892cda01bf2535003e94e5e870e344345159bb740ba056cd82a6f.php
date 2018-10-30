@@ -241,6 +241,6 @@ class __TwigTemplate_792ba6403b52934f463b47cfac4636d78df7afdc8dd828d1d9834ce1348
 
 </body>
 </html>
-", "@ApiPlatform/SwaggerUi/index.html.twig", "/root/mariadbapi/vendor/api-platform/core/src/Bridge/Symfony/Bundle/Resources/views/SwaggerUi/index.html.twig");
+", "@ApiPlatform/SwaggerUi/index.html.twig", "/tmp/gitdeploy/Symfony4/vendor/api-platform/core/src/Bridge/Symfony/Bundle/Resources/views/SwaggerUi/index.html.twig");
     }
 }
