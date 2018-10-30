@@ -1,24 +1,35 @@
+Candidate: Quan Ha Le
+
+Unit Test by Kahan was done as below
+
+
+
+[root@ip-172-31-95-82 Symfony4]# mkdir spec
+[root@ip-172-31-95-82 Symfony4]# mkdir spec/Controller
+
+[root@ip-172-31-95-82 Symfony4]# vi spec/Controller/ProductControllerSpec.php
+-------------------------------------------------------------
 <?php // spec/Controller/ProductControllerSpec.php
- 
+
 namespace App\Spec\Controller;
- 
+
 describe('ProductController', function () {
- 
+
     describe('/product/all', function () {
- 
+
         it('list all products', function () {
- 
+
             $request = $this->request->create('/product/all', 'GET');
             $response = $this->kernel->handle($request);
 
             expect(function () use ($response) {
                 $response->send();
-            })->not->toBeNull();            
-            
+            })->not->toBeNull();
+
         });
- 
+
     });
-    
+
     describe('/product/entry/1', function () {
 
         it('list all products', function () {
@@ -78,5 +89,73 @@ describe('ProductController', function () {
         });
 
     });
-     
+
 });
+
+?>
+-------------------------------------------------------------
+
+[root@ip-172-31-95-82 Symfony4]# vi spec/Controller/CategoryControllerSpec.php
+-------------------------------------------------------------
+<?php // spec/Controller/CategoryControllerSpec.php
+
+namespace App\Spec\Controller;
+
+describe('CategoryController', function () {
+
+    describe('/category/all', function () {
+
+        it('list all categories', function () {
+
+            $request = $this->request->create('/category/all', 'GET');
+            $response = $this->kernel->handle($request);
+
+            expect(function () use ($response) {
+                $response->send();
+            })->not->toBeNull();
+
+        });
+
+    });
+
+});
+
+?>
+-------------------------------------------------------------
+
+
+[root@ip-172-31-95-82 Symfony4]# ./bin/console server:stop
+
+
+ [OK] Stopped the web server.
+
+
+[root@ip-172-31-95-82 Symfony4]# ./bin/console server:start
+
+
+ [OK] Server listening on http://127.0.0.1:8000
+
+
+
+[root@ip-172-31-95-82 Symfony4]# ./vendor/bin/kahlan
+            _     _
+  /\ /\__ _| |__ | | __ _ _ __
+ / //_/ _` | '_ \| |/ _` | '_ \
+/ __ \ (_| | | | | | (_| | | | |
+\/  \/\__,_|_| |_|_|\__,_|_| |_|
+
+The PHP Test Framework for Freedom, Truth and Justice.
+
+src directory  : /tmp/gitdeploy/Symfony4/src
+spec directory : /tmp/gitdeploy/Symfony4/spec
+
+......                                                              6 / 6 (100%)
+
+
+
+Expectations   : 6 Executed
+Specifications : 0 Pending, 0 Excluded, 0 Skipped
+
+Passed 6 of 6 PASS in 0.093 seconds (using 10MB)
+
+
