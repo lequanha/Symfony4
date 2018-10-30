@@ -496,6 +496,7 @@ H) Unit Test by Kahlan
 We have done as 
 
 [root@ip-172-31-95-82 Symfony4]# ./vendor/bin/kahlan
+
             _     _
   /\ /\__ _| |__ | | __ _ _ __
  / //_/ _` | '_ \| |/ _` | '_ \
@@ -505,6 +506,7 @@ We have done as
 The PHP Test Framework for Freedom, Truth and Justice.
 
 src directory  : /tmp/gitdeploy/Symfony4/src
+
 spec directory : /tmp/gitdeploy/Symfony4/spec
 
 ......                                                              6 / 6 (100%)
@@ -512,6 +514,7 @@ spec directory : /tmp/gitdeploy/Symfony4/spec
 
 
 Expectations   : 6 Executed
+
 Specifications : 0 Pending, 0 Excluded, 0 Skipped
 
 Passed 6 of 6 PASS in 0.093 seconds (using 10MB)
