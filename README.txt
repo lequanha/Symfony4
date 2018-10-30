@@ -96,7 +96,8 @@ Now you can start the API
  
  
 B) INSERTION of CATEGORY and PRODUCT
-The insertion of category is not required of user authentication (while the production insertions are required to satisfy user auuthentication
+The insertion of category is not required of user authentication (while the production insertions are required to satisfy user
+authentication
 
 B1) Insertion of categories
 route:  /category/new
