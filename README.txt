@@ -188,7 +188,8 @@ B2) Insertion of products
 route: /product/new
 method:  POST
 Please always send users and passwords, there are 2 users inside the database 
-"username": "Bobby Fischer", "password": "bobby@foo.com"  or  "username": "Betty Rubble", "password": "betty@foo.com" (in this exercise, may I use emails for passwords)
+"username": "Bobby Fischer", "password": "bobby@foo.com"  or  "username": "Betty Rubble", "password": "betty@foo.com" 
+(in this exercise, may I use emails for passwords)
 
 [root@ip-172-31-95-82 Symfony4]# curl -H 'content-type: application/json' -v -X POST -d '{"name": "Pong", "category": "Games", 
 "sku": "A0001", "price": 69.99, "quantity": 20, "username":"Bobby Fischer", "password":"bobby@foo.com"}' 
@@ -303,7 +304,8 @@ http://127.0.0.1:8000/product/new
 {"id":4,"name":"Fony UHD HDR 55\u0022 4k TV","category":"TVs and Accessories","sku":"A0004","price":1399.99,"quantity":5,"created_at":"","modified_at":""}
 
 
-If we do not send username, or if we donot setup a correct password, the unauthorized response will be returned and no data will be inserted
+If we do not send username, or if we donot setup a correct password, the unauthorized response will be returned and no data will be 
+inserted
 
 [root@ip-172-31-95-82 Symfony4]# curl -H 'content-type: application/json' -v -X POST -d '{"name": "Pong", "category": "Games", "sku":
 "A0001", "price": 69.99, "quantity": 20, "username":"Bobby Fischer", "password":"wrong passwprd test"}'
@@ -340,7 +342,9 @@ no authentication required
 
 [root@ip-172-31-95-82 Symfony4]# curl -X GET --header 'Accept: application/ld+json' http://127.0.0.1:8000/product/all
 
-[{"id":1,"name":"Pong","category":"Games","sku":"A0001","price":69.99,"quantity":20,"created_at":"2018-10-30 21:42:27","modified_at":""},{"id":2,"name":"GameStation 5","category":"Games","sku":"A0002","price":269.99,"quantity":15,"created_at":"2018-10-30 21:42:37","modified_at":""},{"id":3,"name":"AP Oman PC - Aluminum","category":"Computers","sku":"A0003","price":1399.99,"quantity":10,"created_at":"2018-10-30 21:42:50","modified_at":""},{"id":4,"name":"Fony UHD HDR 55\u0022 4k TV","category":"TVs and Accessories","sku":"A0004","price":1399.99,"quantity":5,"created_at":"2018-10-30 21:42:58","modified_at":""}]
+[{"id":1,"name":"Pong","category":"Games","sku":"A0001","price":69.99,"quantity":20,"created_at":"2018-10-30 21:42:27","modified_at":""},{"id":2,"name":"GameStation 5","category":"Games","sku":"A0002","price":269.99, "quantity":15,"created_at":"2018-10-30 21:42:37","modified_at":""},{"id":3,"name":"AP Oman PC - Aluminum","category":"Computers", "sku":"A0003","price":1399.99,"quantity":10,"created_at":"2018-10-30 21:42:50","modified_at":""},{"id":4, 
+"name":"Fony UHD HDR 55\u0022 4k TV","category":"TVs and Accessories","sku":"A0004","price":1399.99,"quantity":5, 
+"created_at":"2018-10-30 21:42:58","modified_at":""}]
 
 D) List all categories
 route: /category/all
@@ -349,7 +353,8 @@ no authentication required
 
 [root@ip-172-31-95-82 Symfony4]# curl -X GET --header 'Accept: application/ld+json' http://127.0.0.1:8000/category/all
 
-[{"id":1,"name":"Games","created_at":"2018-10-30 21:40:44","modified_at":""},{"id":2,"name":"Computers","created_at":"2018-10-30 21:40:55","modified_at":""},{"id":3,"name":"TVs and Accessories","created_at":"2018-10-30 21:41:03","modified_at":""}]
+[{"id":1,"name":"Games","created_at":"2018-10-30 21:40:44","modified_at":""},{"id":2,"name":"Computers","created_at":"2018-10-30
+21:40:55","modified_at":""},{"id":3,"name":"TVs and Accessories","created_at":"2018-10-30 21:41:03","modified_at":""}]
 
 E) Retrieve a single product
 route: /product/entry/{id}
@@ -363,7 +368,8 @@ no authentication required
 F) Update a product
 route: /product/update/{id}
 method: PUT
-User authentication required (if we does not include a correct user and password then unauthorizated response will be returened and no data will be updated)
+User authentication required (if we does not include a correct user and password then unauthorizated response will be returened and
+no data will be updated)
 
 We update new quantity and new sku for id=2 above
 
@@ -402,8 +408,8 @@ We update new quantity and new sku for id=2 above
 G) Delete a product
 route: /product/remove/{id}
 method: DELETE
-User authentication required (if we does not include a correct user and password then unauthorizated response will be returned and no
-data will be updated)
+User authentication required (if we does not include a correct user and password then unauthorizated response will be returned and
+no data will be updated)
 
 We now delete product id=2
 
