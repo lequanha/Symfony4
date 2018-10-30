@@ -85,9 +85,14 @@ total 1872
 13695617 drwxr-xr-x. 19 root root   4096 Oct 30 21:25 vendor
 
 
+
+
 Please make sure your MariaDB user and password are
+
 user=root 
+
 password=admin2018
+
 
 then
 
@@ -95,52 +100,30 @@ then
 
 Created database `eStore` for connection named default
 
+
 [root@ip-172-31-95-82 Symfony4]# ./bin/console doctrine:schema:update
+
 
 [root@ip-172-31-95-82 Symfony4]# ./bin/console doctrine:schema:create
 
+
 then please add in user-authentication and default values to start this API
+
 
 [root@ip-172-31-95-82 Symfony4]# mysql --user=root --password=admin2018 eStore;
 
-Reading table information for completion of table and column names
-You can turn off this feature to get a quicker startup with -A
-
-Welcome to the MariaDB monitor.  Commands end with ; or \g.
-Your MariaDB connection id is 46
-Server version: 5.5.60-MariaDB MariaDB Server
-
-Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
-
-Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
-
 MariaDB [eStore]> ALTER TABLE category MODIFY `created_at` timestamp NOT NULL DEFAULT current_timestamp();
-
-Query OK, 0 rows affected (0.00 sec)
-Records: 0  Duplicates: 0  Warnings: 0
 
 MariaDB [eStore]> ALTER TABLE product MODIFY `created_at` timestamp NOT NULL DEFAULT current_timestamp();
 
-Query OK, 0 rows affected (0.01 sec)
-Records: 0  Duplicates: 0  Warnings: 0
-
 MariaDB [eStore]> ALTER TABLE user MODIFY `created_at` timestamp NOT NULL DEFAULT current_timestamp();
-
-Query OK, 0 rows affected (0.01 sec)
-Records: 0  Duplicates: 0  Warnings: 0
 
 MariaDB [eStore]> insert into user(name, email) values ("Bobby Fischer", "bobby@foo.com"), ("Betty Rubble", "betty@foo.com");
 
-Query OK, 2 rows affected (0.00 sec)
-Records: 2  Duplicates: 0  Warnings: 0
-
 MariaDB [eStore]> commit;
-
-Query OK, 0 rows affected (0.00 sec)
 
 MariaDB [eStore]> exit;
 
-Bye
 
 [root@ip-172-31-95-82 Symfony4]#
 
