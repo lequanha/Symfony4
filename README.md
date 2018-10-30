@@ -1,5 +1,5 @@
-How to use this Symfony REST API
-
+How to use this Symfony REST API 
+ 
 This system already included
 - REST Structure
 - Logging
@@ -35,37 +35,64 @@ Cloning into 'Symfony4'...
 total 1872
 
 13700010 drwxr-xr-x. 11 root root   4096 Oct 30 21:25 .
+
  9828366 drwxr-xr-x.  3 root root     22 Oct 30 21:25 ..
+ 
  5790159 drwxr-xr-x.  2 root root     21 Oct 30 21:25 bin
+ 
 13700030 -rw-r--r--.  1 root root   1655 Oct 30 21:25 composer.json
+
 13700031 -rw-r--r--.  1 root root 183291 Oct 30 21:25 composer.lock
+
  9880159 drwxr-xr-x.  4 root root     95 Oct 30 21:25 config
+ 
 13705593 -rw-r--r--.  1 root root    764 Oct 30 21:25 electronic-catalog.json
+
 13700020 -rw-r--r--.  1 root root   1023 Oct 30 21:25 .env
+
 13700021 -rw-r--r--.  1 root root   1029 Oct 30 21:25 .env.dist
+
  1059686 drwxr-xr-x.  8 root root    163 Oct 30 21:25 .git
+ 
 13700022 -rw-r--r--.  1 root root    195 Oct 30 21:25 .gitignore
+
 13700023 -rw-r--r--.  1 root root 209145 Oct 30 21:25 HowToDeploySymfony4.docx
+
 13700024 -rw-r--r--.  1 root root 615073 Oct 30 21:25 HowToDeploySymfony4.pdf
+
 13700025 -rw-r--r--.  1 root root  34620 Oct 30 21:25 HowToDeploySymfony4.txt
+
 13700026 -rw-r--r--.  1 root root 182907 Oct 30 21:25 HowToSetup.docx
+
 13700027 -rw-r--r--.  1 root root 623274 Oct 30 21:25 HowToSetup.pdf
+
 13700028 -rw-r--r--.  1 root root   6332 Oct 30 21:25 HowToSetup.txt
+
 13700029 -rw-r--r--.  1 root root   1495 Oct 30 21:25 ProblemDescription.txt
+
  5790164 drwxr-xr-x.  3 root root     38 Oct 30 21:25 public
+ 
  5818499 drwxr-xr-x.  7 root root    104 Oct 30 21:25 src
+ 
 13705610 -rw-r--r--.  1 root root   8309 Oct 30 21:25 symfony.lock
+
 13705611 drwxr-xr-x.  4 root root     59 Oct 30 21:25 templates
+
  8714635 drwxr-xr-x.  2 root root     24 Oct 30 21:25 translations
+ 
 13705613 drwxr-xr-x.  4 root root     30 Oct 30 21:25 var
+
 13695617 drwxr-xr-x. 19 root root   4096 Oct 30 21:25 vendor
 
+
 Please make sure your MariaDB user and password are
-user=root
+user=root 
 password=admin2018
 
 then
+
 [root@ip-172-31-95-82 Symfony4]# ./bin/console doctrine:database:create
+
 Created database `eStore` for connection named default
 
 [root@ip-172-31-95-82 Symfony4]# ./bin/console doctrine:schema:update
@@ -73,7 +100,9 @@ Created database `eStore` for connection named default
 [root@ip-172-31-95-82 Symfony4]# ./bin/console doctrine:schema:create
 
 then please add in user-authentication and default values to start this API
+
 [root@ip-172-31-95-82 Symfony4]# mysql --user=root --password=admin2018 eStore;
+
 Reading table information for completion of table and column names
 You can turn off this feature to get a quicker startup with -A
 
@@ -86,26 +115,33 @@ Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
 Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
 MariaDB [eStore]> ALTER TABLE category MODIFY `created_at` timestamp NOT NULL DEFAULT current_timestamp();
+
 Query OK, 0 rows affected (0.00 sec)
 Records: 0  Duplicates: 0  Warnings: 0
 
 MariaDB [eStore]> ALTER TABLE product MODIFY `created_at` timestamp NOT NULL DEFAULT current_timestamp();
+
 Query OK, 0 rows affected (0.01 sec)
 Records: 0  Duplicates: 0  Warnings: 0
 
 MariaDB [eStore]> ALTER TABLE user MODIFY `created_at` timestamp NOT NULL DEFAULT current_timestamp();
+
 Query OK, 0 rows affected (0.01 sec)
 Records: 0  Duplicates: 0  Warnings: 0
 
 MariaDB [eStore]> insert into user(name, email) values ("Bobby Fischer", "bobby@foo.com"), ("Betty Rubble", "betty@foo.com");
+
 Query OK, 2 rows affected (0.00 sec)
 Records: 2  Duplicates: 0  Warnings: 0
 
 MariaDB [eStore]> commit;
+
 Query OK, 0 rows affected (0.00 sec)
 
 MariaDB [eStore]> exit;
+
 Bye
+
 [root@ip-172-31-95-82 Symfony4]#
 
 
