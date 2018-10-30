@@ -136,13 +136,17 @@ Now you can start the API
  
  
 B) INSERTION of CATEGORY and PRODUCT
+
 The insertion of category is not required of user authentication (while the production insertions are required to satisfy user auuthentication
 
 B1) Insertion of categories
+
 route:  /category/new
+
 method:  POST
 
 [root@ip-172-31-95-82 Symfony4]# curl -H 'content-type: application/json' -v -X POST -d '{"name": "Games"}' http://127.0.0.1:8000/category/new
+
 * About to connect() to 127.0.0.1 port 8000 (#0)
 *   Trying 127.0.0.1...
 * Connected to 127.0.0.1 (127.0.0.1) port 8000 (#0)
@@ -169,6 +173,7 @@ method:  POST
 {"id":1,"name":"Games","created_at":"","modified_at":""} 
  
 [root@ip-172-31-95-82 Symfony4]# curl -H 'content-type: application/json' -v -X POST -d '{"name": "Computers"}' http://127.0.0.1:8000/category/new
+
 * About to connect() to 127.0.0.1 port 8000 (#0)
 *   Trying 127.0.0.1...
 * Connected to 127.0.0.1 (127.0.0.1) port 8000 (#0)
@@ -195,6 +200,7 @@ method:  POST
 {"id":2,"name":"Computers","created_at":"","modified_at":""} 
 
 [root@ip-172-31-95-82 Symfony4]# curl -H 'content-type: application/json' -v -X POST -d '{"name": "TVs and Accessories"}' http://127.0.0.1:8000/category/new
+
 * About to connect() to 127.0.0.1 port 8000 (#0)
 *   Trying 127.0.0.1...
 * Connected to 127.0.0.1 (127.0.0.1) port 8000 (#0)
@@ -222,13 +228,17 @@ method:  POST
 
 
 B2) Insertion of products
+
 route: /product/new
+
 method:  POST
 
 Please always send users and passwords, there are 2 users inside the database 
+
 "username": "Bobby Fischer", "password": "bobby@foo.com"  or  "username": "Betty Rubble", "password": "betty@foo.com" (in this exercise, may I use emails for passwords)
 
 [root@ip-172-31-95-82 Symfony4]# curl -H 'content-type: application/json' -v -X POST -d '{"name": "Pong", "category": "Games", "sku": "A0001", "price": 69.99, "quantity": 20, "username":"Bobby Fischer", "password":"bobby@foo.com"}'  http://127.0.0.1:8000/product/new
+
 * About to connect() to 127.0.0.1 port 8000 (#0)
 *   Trying 127.0.0.1...
 * Connected to 127.0.0.1 (127.0.0.1) port 8000 (#0)
@@ -251,9 +261,10 @@ Please always send users and passwords, there are 2 users inside the database
 < Link: <http://127.0.0.1:8000/api/docs.jsonld>; rel="http://www.w3.org/ns/hydra/core#apiDocumentation"
 <
 * Closing connection 0
-{"id":1,"name":"Pong","category":"Games","sku":"A0001","price":69.99,"quantity":20,"created_at":"","modified_at":""}[root@ip-172-31-95-82 Symfony4]#
-[root@ip-172-31-95-82 Symfony4]#
+{"id":1,"name":"Pong","category":"Games","sku":"A0001","price":69.99,"quantity":20,"created_at":"","modified_at":""}
+
 [root@ip-172-31-95-82 Symfony4]# curl -H 'content-type: application/json' -v -X POST -d '{"name": "GameStation 5", "category": "Games", "sku": "A0002", "price": 269.99, "quantity": 15, "username":"Bobby Fischer", "password":"bobby@foo.com"}' http://127.0.0.1:8000/product/new
+
 * About to connect() to 127.0.0.1 port 8000 (#0)
 *   Trying 127.0.0.1...
 * Connected to 127.0.0.1 (127.0.0.1) port 8000 (#0)
@@ -276,9 +287,10 @@ Please always send users and passwords, there are 2 users inside the database
 < Link: <http://127.0.0.1:8000/api/docs.jsonld>; rel="http://www.w3.org/ns/hydra/core#apiDocumentation"
 <
 * Closing connection 0
-{"id":2,"name":"GameStation 5","category":"Games","sku":"A0002","price":269.99,"quantity":15,"created_at":"","modified_at":""}[root@ip-172-31-95-82 Symfony4]#
-[root@ip-172-31-95-82 Symfony4]#
+{"id":2,"name":"GameStation 5","category":"Games","sku":"A0002","price":269.99,"quantity":15,"created_at":"","modified_at":""}
+
 [root@ip-172-31-95-82 Symfony4]# curl -H 'content-type: application/json' -v -X POST -d '{"name": "AP Oman PC - Aluminum", "category": "Computers", "sku": "A0003", "price": 1399.99, "quantity": 10, "username":"Bobby Fischer", "password":"bobby@foo.com"}' http://127.0.0.1:8000/product/new
+
 * About to connect() to 127.0.0.1 port 8000 (#0)
 *   Trying 127.0.0.1...
 * Connected to 127.0.0.1 (127.0.0.1) port 8000 (#0)
@@ -301,9 +313,10 @@ Please always send users and passwords, there are 2 users inside the database
 < Link: <http://127.0.0.1:8000/api/docs.jsonld>; rel="http://www.w3.org/ns/hydra/core#apiDocumentation"
 <
 * Closing connection 0
-{"id":3,"name":"AP Oman PC - Aluminum","category":"Computers","sku":"A0003","price":1399.99,"quantity":10,"created_at":"","modified_at":""}[root@ip-172-31-95-82 Symfony4]#
-[root@ip-172-31-95-82 Symfony4]#
+{"id":3,"name":"AP Oman PC - Aluminum","category":"Computers","sku":"A0003","price":1399.99,"quantity":10,"created_at":"","modified_at":""}
+
 [root@ip-172-31-95-82 Symfony4]# curl -H 'content-type: application/json' -v -X POST -d '{"name": "Fony UHD HDR 55\" 4k TV", "category": "TVs and Accessories", "sku": "A0004", "price": 1399.99, "quantity": 5, "username":"Bobby Fischer", "password":"bobby@foo.com"}' http://127.0.0.1:8000/product/new
+
 * About to connect() to 127.0.0.1 port 8000 (#0)
 *   Trying 127.0.0.1...
 * Connected to 127.0.0.1 (127.0.0.1) port 8000 (#0)
@@ -326,11 +339,13 @@ Please always send users and passwords, there are 2 users inside the database
 < Link: <http://127.0.0.1:8000/api/docs.jsonld>; rel="http://www.w3.org/ns/hydra/core#apiDocumentation"
 <
 * Closing connection 0
-{"id":4,"name":"Fony UHD HDR 55\u0022 4k TV","category":"TVs and Accessories","sku":"A0004","price":1399.99,"quantity":5,"created_at":"","modified_at":""}[root@ip-172-31-95-82 Symfony4]#
-[root@ip-172-31-95-82 Symfony4]#
+{"id":4,"name":"Fony UHD HDR 55\u0022 4k TV","category":"TVs and Accessories","sku":"A0004","price":1399.99,"quantity":5,"created_at":"","modified_at":""}
+
 
 If we do not send username, or if we donot setup a correct password, the unauthorized response will be returned and no data will be inserted
+
 [root@ip-172-31-95-82 Symfony4]# curl -H 'content-type: application/json' -v -X POST -d '{"name": "Pong", "category": "Games", "sku": "A0001", "price": 69.99, "quantity": 20, "username":"Bobby Fischer", "password":"wrong passwprd test"}'  http://127.0.0.1:8000/product/new
+
 * About to connect() to 127.0.0.1 port 8000 (#0)
 *   Trying 127.0.0.1...
 * Connected to 127.0.0.1 (127.0.0.1) port 8000 (#0)
@@ -357,16 +372,23 @@ If we do not send username, or if we donot setup a correct password, the unautho
 
 
 C) List all products
+
 route: /product/all
+
 method: GET
+
 no authentication required
 
 [root@ip-172-31-95-82 Symfony4]# curl -X GET --header 'Accept: application/ld+json' http://127.0.0.1:8000/product/all
+
 [{"id":1,"name":"Pong","category":"Games","sku":"A0001","price":69.99,"quantity":20,"created_at":"2018-10-30 21:42:27","modified_at":""},{"id":2,"name":"GameStation 5","category":"Games","sku":"A0002","price":269.99,"quantity":15,"created_at":"2018-10-30 21:42:37","modified_at":""},{"id":3,"name":"AP Oman PC - Aluminum","category":"Computers","sku":"A0003","price":1399.99,"quantity":10,"created_at":"2018-10-30 21:42:50","modified_at":""},{"id":4,"name":"Fony UHD HDR 55\u0022 4k TV","category":"TVs and Accessories","sku":"A0004","price":1399.99,"quantity":5,"created_at":"2018-10-30 21:42:58","modified_at":""}]
 
 D) List all categories
+
 route: /category/all
+
 method: GET
+
 no authentication required
 
 [root@ip-172-31-95-82 Symfony4]# curl -X GET --header 'Accept: application/ld+json' http://127.0.0.1:8000/category/all
@@ -374,20 +396,29 @@ no authentication required
 [{"id":1,"name":"Games","created_at":"2018-10-30 21:40:44","modified_at":""},{"id":2,"name":"Computers","created_at":"2018-10-30 21:40:55","modified_at":""},{"id":3,"name":"TVs and Accessories","created_at":"2018-10-30 21:41:03","modified_at":""}]
 
 E) Retrieve a single product
+
 route: /product/entry/{id}
+
 method: GET
+
 no authentication required
 
 [root@ip-172-31-95-82 Symfony4]# curl -X GET --header 'Accept: application/ld+json' http://127.0.0.1:8000/product/entry/2
+
 {"id":2,"name":"GameStation 5","category":"Games","sku":"A0002","price":269.99,"quantity":15,"created_at":"2018-10-30 21:42:37","modified_at":""}
 
 F) Update a product
+
 route: /product/update/{id}
+
 method: PUT
+
 User authentication required (if we does not include a correct user and password then unauthorizated response will be returened and no data will be updated)
 
 We update new quantity and new sku for id=2 above
+
 [root@ip-172-31-95-82 Symfony4]# curl -H 'content-type: application/json' -v -X PUT -d '{"id":2, "sku": "A9999", "quantity": 40, "username":"Bobby Fischer", "password":"bobby@foo.com"}' http://127.0.0.1:8000/product/update
+
 * About to connect() to 127.0.0.1 port 8000 (#0)
 *   Trying 127.0.0.1...
 * Connected to 127.0.0.1 (127.0.0.1) port 8000 (#0)
@@ -412,16 +443,23 @@ We update new quantity and new sku for id=2 above
 * Closing connection 0
 {}
 
-[root@ip-172-31-95-82 Symfony4]# curl -X GET --header 'Accept: application/ld+json' http://127.0.0.1:8000/product/entry/2                                                                    {"id":2,"name":"GameStation 5","category":"Games","sku":"A9999","price":269.99,"quantity":40,"created_at":"2018-10-30 21:42:37","modified_at":"2018-10-30 21:54:08"}
+[root@ip-172-31-95-82 Symfony4]# curl -X GET --header 'Accept: application/ld+json' http://127.0.0.1:8000/product/entry/2   
+
+{"id":2,"name":"GameStation 5","category":"Games","sku":"A9999","price":269.99,"quantity":40,"created_at":"2018-10-30 21:42:37","modified_at":"2018-10-30 21:54:08"}
 
 
 G) Delete a product
+
 route: /product/remove/{id}
+
 method: DELETE
+
 User authentication required (if we does not include a correct user and password then unauthorizated response will be returened and no data will be updated)
 
 We now delete product id=2
+
 [root@ip-172-31-95-82 Symfony4]# curl -H 'content-type: application/json' -v -X DELETE -d '{"username":"Bobby Fischer","password":"bobby@foo.com"}' http://127.0.0.1:8000/product/remove/2
+
 * About to connect() to 127.0.0.1 port 8000 (#0)
 *   Trying 127.0.0.1...
 * Connected to 127.0.0.1 (127.0.0.1) port 8000 (#0)
@@ -447,14 +485,19 @@ We now delete product id=2
 {"deleted":null}
 
 Now when we retrieve the product with id=2, we will not find it anymore because it was deleted
+
 [root@ip-172-31-95-82 Symfony4]# curl -X GET --header 'Accept: application/ld+json' http://127.0.0.1:8000/product/entry/2
+
 {"errors":"Not found!"}
 
 H) This API installed logger
+
 The log file is var/log/dev.log
 
 We can view the last 20 lines of the log file to see the actions that we just took above
+
 [root@ip-172-31-95-82 Symfony4]# tail -20 var/log/dev.log
+
 [2018-10-30 21:54:08] doctrine.DEBUG: SELECT t0.id AS id_1, t0.name AS name_2, t0.category AS category_3, t0.sku AS sku_4, t0.price AS price_5, t0.quantity AS quantity_6, t0.created_at AS created_at_7, t0.modified_at AS modified_at_8 FROM product t0 WHERE t0.id = ? [2] []
 [2018-10-30 21:54:08] doctrine.DEBUG: "START TRANSACTION" [] []
 [2018-10-30 21:54:08] doctrine.DEBUG: UPDATE product SET sku = ?, quantity = ?, modified_at = ? WHERE id = ? ["A9999",40,"2018-10-30 21:54:08",2] []
