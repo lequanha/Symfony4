@@ -21,14 +21,19 @@ https://github.com/lequanha/Symfony4/blob/master/HowToSetup.txt
 then you will have the same environment as mine
 
 A) GITHUB re-development
+
 After that, please develop the api again as
+
 [root@ip-172-31-95-82 gitdeploy]# git clone https://github.com/lequanha/Symfony4.git
+
 Cloning into 'Symfony4'...
 
 [root@ip-172-31-95-82 gitdeploy]# cd Symfony4/
 
 [root@ip-172-31-95-82 Symfony4]# ls -lai
+
 total 1872
+
 13700010 drwxr-xr-x. 11 root root   4096 Oct 30 21:25 .
  9828366 drwxr-xr-x.  3 root root     22 Oct 30 21:25 ..
  5790159 drwxr-xr-x.  2 root root     21 Oct 30 21:25 bin
