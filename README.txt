@@ -368,7 +368,7 @@ no authentication required
 F) Update a product
 route: /product/update/{id}
 method: PUT
-User authentication required (if we does not include a correct user and password then unauthorizated response will be returened and
+User authentication required (if we does not include a correct user and password then unauthorizated response will be returned and
 no data will be updated)
 
 We update new quantity and new sku for id=2 above
