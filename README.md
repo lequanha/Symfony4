@@ -129,7 +129,9 @@ MariaDB [eStore]> exit;
 
 
 Now you can start the API 
+
 [root@ip-172-31-95-82 Symfony4]# ./bin/console server:start
+
  [OK] Server listening on http://127.0.0.1:8000
  
  
@@ -164,8 +166,8 @@ method:  POST
 <
 
 * Closing connection 0
-{"id":1,"name":"Games","created_at":"","modified_at":""}[root@ip-172-31-95-82 Symfony4]#
-[root@ip-172-31-95-82 Symfony4]#
+{"id":1,"name":"Games","created_at":"","modified_at":""} 
+ 
 [root@ip-172-31-95-82 Symfony4]# curl -H 'content-type: application/json' -v -X POST -d '{"name": "Computers"}' http://127.0.0.1:8000/category/new
 * About to connect() to 127.0.0.1 port 8000 (#0)
 *   Trying 127.0.0.1...
@@ -190,8 +192,8 @@ method:  POST
 <
 
 * Closing connection 0
-{"id":2,"name":"Computers","created_at":"","modified_at":""}[root@ip-172-31-95-82 Symfony4]#
-[root@ip-172-31-95-82 Symfony4]#
+{"id":2,"name":"Computers","created_at":"","modified_at":""} 
+
 [root@ip-172-31-95-82 Symfony4]# curl -H 'content-type: application/json' -v -X POST -d '{"name": "TVs and Accessories"}' http://127.0.0.1:8000/category/new
 * About to connect() to 127.0.0.1 port 8000 (#0)
 *   Trying 127.0.0.1...
@@ -216,8 +218,7 @@ method:  POST
 <
 
 * Closing connection 0
-{"id":3,"name":"TVs and Accessories","created_at":"","modified_at":""}[root@ip-172-31-95-82 Symfony4]#
-[root@ip-172-31-95-82 Symfony4]#
+{"id":3,"name":"TVs and Accessories","created_at":"","modified_at":""} 
 
 
 B2) Insertion of products
