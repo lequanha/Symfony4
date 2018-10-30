@@ -17,6 +17,7 @@ Please follow these files to set up your same environment on Centos 7 so that th
 https://github.com/lequanha/Symfony4/blob/master/HowToSetup.pdf
 https://github.com/lequanha/Symfony4/blob/master/HowToSetup.docx
 https://github.com/lequanha/Symfony4/blob/master/HowToSetup.txt
+
 then you will have the same environment as mine
 
 A) GITHUB re-development
