@@ -499,24 +499,43 @@ We can view the last 20 lines of the log file to see the actions that we just to
 [root@ip-172-31-95-82 Symfony4]# tail -20 var/log/dev.log
 
 [2018-10-30 21:54:08] doctrine.DEBUG: SELECT t0.id AS id_1, t0.name AS name_2, t0.category AS category_3, t0.sku AS sku_4, t0.price AS price_5, t0.quantity AS quantity_6, t0.created_at AS created_at_7, t0.modified_at AS modified_at_8 FROM product t0 WHERE t0.id = ? [2] []
+
 [2018-10-30 21:54:08] doctrine.DEBUG: "START TRANSACTION" [] []
+
 [2018-10-30 21:54:08] doctrine.DEBUG: UPDATE product SET sku = ?, quantity = ?, modified_at = ? WHERE id = ? ["A9999",40,"2018-10-30 21:54:08",2] []
+
 [2018-10-30 21:54:08] doctrine.DEBUG: "COMMIT" [] []
+
 [2018-10-30 21:54:19] request.INFO: Matched route "app_product_getproduct". {"route":"app_product_getproduct","route_parameters":{"_route":"app_product_getproduct","_controller":"App\\Controller\\ProductController::getProductAction","id":"2"},"request_uri":"http://127.0.0.1:8000/product/entry/2","method":"GET"} []
+
 [2018-10-30 21:54:19] security.INFO: Populated the TokenStorage with an anonymous Token. [] []
+
 [2018-10-30 21:54:19] php.INFO: User Deprecated: The "Sensio\Bundle\FrameworkExtraBundle\Configuration\Method" annotation is deprecated since version 5.2. Use "Symfony\Component\Routing\Annotation\Route" instead. {"exception":"[object] (ErrorException(code: 0): User Deprecated: The \"Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Method\" annotation is deprecated since version 5.2. Use \"Symfony\\Component\\Routing\\Annotation\\Route\" instead. at /tmp/gitdeploy/Symfony4/vendor/sensio/framework-extra-bundle/Configuration/Method.php:14)"} []
+
 [2018-10-30 21:54:19] doctrine.DEBUG: SELECT t0.id AS id_1, t0.name AS name_2, t0.category AS category_3, t0.sku AS sku_4, t0.price AS price_5, t0.quantity AS quantity_6, t0.created_at AS created_at_7, t0.modified_at AS modified_at_8 FROM product t0 WHERE t0.id = ? [2] []
+
 [2018-10-30 21:56:53] request.INFO: Matched route "app_product_deleteproduct". {"route":"app_product_deleteproduct","route_parameters":{"_route":"app_product_deleteproduct","_controller":"App\\Controller\\ProductController::deleteProductAction","id":"2"},"request_uri":"http://127.0.0.1:8000/product/remove/2","method":"DELETE"} []
+
 [2018-10-30 21:56:53] security.INFO: Populated the TokenStorage with an anonymous Token. [] []
+
 [2018-10-30 21:56:53] php.INFO: User Deprecated: The "Sensio\Bundle\FrameworkExtraBundle\Configuration\Method" annotation is deprecated since version 5.2. Use "Symfony\Component\Routing\Annotation\Route" instead. {"exception":"[object] (ErrorException(code: 0): User Deprecated: The \"Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Method\" annotation is deprecated since version 5.2. Use \"Symfony\\Component\\Routing\\Annotation\\Route\" instead. at /tmp/gitdeploy/Symfony4/vendor/sensio/framework-extra-bundle/Configuration/Method.php:14)"} []
+
 [2018-10-30 21:56:53] doctrine.DEBUG: SELECT u0_.id AS id_0, u0_.name AS name_1, u0_.email AS email_2, u0_.created_at AS created_at_3, u0_.modified_at AS modified_at_4 FROM user u0_ WHERE u0_.name = ? AND u0_.email = ? ["Bobby Fischer","bobby@foo.com"] []
+
 [2018-10-30 21:56:53] doctrine.DEBUG: SELECT t0.id AS id_1, t0.name AS name_2, t0.category AS category_3, t0.sku AS sku_4, t0.price AS price_5, t0.quantity AS quantity_6, t0.created_at AS created_at_7, t0.modified_at AS modified_at_8 FROM product t0 WHERE t0.id = ? [2] []
+
 [2018-10-30 21:56:53] doctrine.DEBUG: "START TRANSACTION" [] []
+
 [2018-10-30 21:56:53] doctrine.DEBUG: DELETE FROM product WHERE id = ? [2] []
+
 [2018-10-30 21:56:53] doctrine.DEBUG: "COMMIT" [] []
+
 [2018-10-30 21:57:04] request.INFO: Matched route "app_product_getproduct". {"route":"app_product_getproduct","route_parameters":{"_route":"app_product_getproduct","_controller":"App\\Controller\\ProductController::getProductAction","id":"2"},"request_uri":"http://127.0.0.1:8000/product/entry/2","method":"GET"} []
+
 [2018-10-30 21:57:04] security.INFO: Populated the TokenStorage with an anonymous Token. [] []
+
 [2018-10-30 21:57:04] php.INFO: User Deprecated: The "Sensio\Bundle\FrameworkExtraBundle\Configuration\Method" annotation is deprecated since version 5.2. Use "Symfony\Component\Routing\Annotation\Route" instead. {"exception":"[object] (ErrorException(code: 0): User Deprecated: The \"Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Method\" annotation is deprecated since version 5.2. Use \"Symfony\\Component\\Routing\\Annotation\\Route\" instead. at /tmp/gitdeploy/Symfony4/vendor/sensio/framework-extra-bundle/Configuration/Method.php:14)"} []
+
 [2018-10-30 21:57:04] doctrine.DEBUG: SELECT t0.id AS id_1, t0.name AS name_2, t0.category AS category_3, t0.sku AS sku_4, t0.price AS price_5, t0.quantity AS quantity_6, t0.created_at AS created_at_7, t0.modified_at AS modified_at_8 FROM product t0 WHERE t0.id = ? [2] []
 
 
