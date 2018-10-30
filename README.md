@@ -490,7 +490,35 @@ Now when we retrieve the product with id=2, we will not find it anymore because 
 
 {"errors":"Not found!"}
 
-H) This API installed logger
+
+H) Unit Test by Kahlan
+
+We have done as 
+
+[root@ip-172-31-95-82 Symfony4]# ./vendor/bin/kahlan
+            _     _
+  /\ /\__ _| |__ | | __ _ _ __
+ / //_/ _` | '_ \| |/ _` | '_ \
+/ __ \ (_| | | | | | (_| | | | |
+\/  \/\__,_|_| |_|_|\__,_|_| |_|
+
+The PHP Test Framework for Freedom, Truth and Justice.
+
+src directory  : /tmp/gitdeploy/Symfony4/src
+spec directory : /tmp/gitdeploy/Symfony4/spec
+
+......                                                              6 / 6 (100%)
+
+
+
+Expectations   : 6 Executed
+Specifications : 0 Pending, 0 Excluded, 0 Skipped
+
+Passed 6 of 6 PASS in 0.093 seconds (using 10MB)
+
+
+
+I) This API installed logger
 
 The log file is var/log/dev.log
 
